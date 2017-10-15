@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace MapR
 {
@@ -12,8 +7,8 @@ namespace MapR
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MapR.MainPage();
+            
+            MainPage = new MapR.Views.ListBranch();
         }
 
         protected override void OnStart()

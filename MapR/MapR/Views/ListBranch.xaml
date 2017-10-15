@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MapR.Views.ListBranch">
+    <ContentPage.Content>
+        <ListView  
+            ItemsSource="{Binding Branches}" HasUnevenRows="True" VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout BackgroundColor="##A4A4A4" Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding SucName}" TextColor="#f35e20" />
+                                    <Label Text="{Binding SucAdress}" HorizontalOptions="EndAndExpand" TextColor="#503026" />
+                                </StackLayout>
+                                <Image HeightRequest="50" WidthRequest="50" Source="ico_nextcell.png" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
