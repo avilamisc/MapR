@@ -1,16 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MapR.Views.DetailBranch"
-             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+             xmlns:controls="clr-namespace:MapR.Controls"
+             Title="Sucursal">
     
     <ContentPage.Content>
         
-        <StackLayout>
+        <StackLayout Margin="10,20">
             <Label x:Name="labelSuc" TextColor="#f35e20" />
-        </StackLayout>
-            
-        <!--<maps:Map x:Name="mapR" WidthRequest="320" HeightRequest="200" />-->
         
+        <controls:CustomMap
+                x:Name="customMap"
+               
+                IsShowingUser="true"
+                MapType="Street" />
+
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>
