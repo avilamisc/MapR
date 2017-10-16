@@ -1,17 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace MapR
 {
-    public partial class MainPage : ContentPage
+  public partial class MainPage : ContentPage
+  {
+    public MainPage()
     {
-        public MainPage()
-        {
-            InitializeComponent();
-        }
+      InitializeComponent();
     }
+  }
 }
