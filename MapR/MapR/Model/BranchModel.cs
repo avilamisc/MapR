@@ -47,20 +47,24 @@ namespace MapR.Model
         }
 
         [DataMember(Name = "LAT")]
-        private string lat;
-        public string Lat
-        {
-            get { return lat; }
-            set { lat = value; }
-        }
+        //private string lat;
+        //public string Lat
+        //{
+        //    get { return lat; }
+        //    set { lat = value; }
+        //}
+
+        public double Lat { get; set; }
 
         [DataMember(Name = "LON")]
-        private string lon;
-        public string Lon
-        {
-            get { return lon; }
-            set { lon = value; }
-        }
+        //private string lon;
+        //public string Lon
+        //{
+        //    get { return lon; }
+        //    set { lon = value; }
+        //}
+
+        public double Lon { get; set; }
 
         [DataMember(Name = "ID_COUNTRY")]
         private string idCountry;

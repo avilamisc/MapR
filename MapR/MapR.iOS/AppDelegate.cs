@@ -25,6 +25,8 @@ namespace MapR.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
+            Xamarin.FormsMaps.Init();
+
             return base.FinishedLaunching(app, options);
         }
     }

@@ -8,7 +8,7 @@ namespace MapR
         {
             InitializeComponent();
             
-            MainPage = new MapR.Views.ListBranch();
+            MainPage = new Views.ListBranch();
         }
 
         protected override void OnStart()
